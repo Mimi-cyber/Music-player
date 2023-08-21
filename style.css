@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(image/music\ player.png);
+    background-size: cover;
+}
+.music-player{
+    text-align: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.control-player{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #fff;
+    padding: 25px 25px;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.audio-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+}
+h1{
+    font-size: 30px;
+}
+.audio-div{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+#img-music {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: transform 1s ease;
+    margin-right: 10px;
+}
+.control-btn{
+    border: none;
+    margin: 0 10px;
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
